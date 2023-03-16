@@ -27,9 +27,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className="bg-white px-10 md:px-20 lg:px-40">
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between ">
+        <section className="">
+          <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developed by Brandon</h1>
             <ul className="flex items-center">
               <li>
@@ -45,26 +46,28 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl ">
-              Brandon Garcia
-            </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
-              {' '}
-              Developer and Designer
-            </h3>
-            <p className="text-md py-5 leading-8 md:text-xl max-w-xl mx-auto">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
-            </p>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3">
-            <AiFillLinkedin />
-            <AiFillYoutube />
-            <AiFillTwitterCircle />
-          </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={deved} layout="fill" objectFit="cover" />
+          <div className="flex justify-center my-auto mx-auto">
+            <div className=" p-10">
+              <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl ">
+                Brandon Garcia
+              </h2>
+              <h3 className="text-2xl py-2 md:text-3xl">
+                {' '}
+                Developer and Designer
+              </h3>
+              <p className="text-md py-5 leading-8 md:text-xl max-w-xl mx-auto">
+                Freelancer providing services for programming and design content
+                needs. Join me down below and let's get cracking!
+              </p>
+              <div className="text-5xl flex justify-start gap-16 py-3">
+                <AiFillLinkedin />
+                <AiFillYoutube />
+                <AiFillTwitterCircle />
+              </div>
+            </div>
+            <div className="relative  bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96">
+              <Image src={deved} layout="fill" objectFit="cover" alt="selfie" />
+            </div>
           </div>
         </section>
         <section>
